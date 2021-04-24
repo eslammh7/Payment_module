@@ -14,11 +14,10 @@ public class check extends Payment {
     private String name;
     private String bankID;
     public static void main(String[] args) {
-        check check = new check();
-        if (check.AuthorizeNon())
+        AuthorizeCheck c = new AuthorizeCheck();
+        if (c.authorized())
             System.out.println("success");
         else System.out.println("fail");
-        check.PrintNon();
     }
     
 }

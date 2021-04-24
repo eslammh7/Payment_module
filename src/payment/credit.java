@@ -12,12 +12,12 @@ public class credit extends Payment {
     private String type;
     private Date expDate;
     public static void main(String[] args) {
-        credit credit = new credit();
-        if (credit.AuthorizeCredit1())
+        AuthorizeCredit1 a = new AuthorizeCredit1();
+        AuthorizeCredit2 aa = new AuthorizeCredit2();
+        if (a.authorized())
             System.out.println("success");
-        else if (credit.AuthorizeCredit2())
+        else if (aa.authorized())
             System.out.println("success");
         else System.out.println("fail");
-        credit.PrintCashTrans();
     }
 }

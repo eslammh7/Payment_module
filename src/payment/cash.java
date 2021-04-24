@@ -13,8 +13,9 @@ package payment;
 public class cash extends Payment {
     private float cashTendered;
     public static void main(String[] args) {
-        cash cash = new cash();
-        cash.PrintCashTrans();
-        
+        AuthorizeNon b= new AuthorizeNon();
+        if (b.authorized())
+            System.out.println("success");
+        else System.out.println("fail");
     }
 }

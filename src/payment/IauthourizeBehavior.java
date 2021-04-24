@@ -11,8 +11,5 @@ package payment;
  * @author smsm_
  */
 public interface IauthourizeBehavior {
-    public boolean AuthorizeNon();
-    public boolean AuthorizeCash();
-    public boolean AuthorizeCredit1();
-    public boolean AuthorizeCredit2();
+    public boolean authorized();
 }
